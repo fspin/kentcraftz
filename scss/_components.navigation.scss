@@ -47,7 +47,7 @@
 
     .c-nav-main__link {
         display: block;
-        color: palette(color-alpha);
+        color: palette(color-neutral, x-dark);
         text-decoration: none;
         font-weight: $beta-font-weight;
         @include text-dimensions($alpha-font-size,1,0,.25,.25);
@@ -56,9 +56,13 @@
             @include padding-tb(1.25,1.25);
         }
 
-        &:hover,
         .is-selected & {
-            color: palette(color-alpha,dark);
+            color: palette(color-neutral,light);
+        }
+
+        &:hover {
+            color: palette(color-neutral);
+            text-decoration: none;
         }
     }
 
