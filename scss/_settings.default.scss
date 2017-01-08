@@ -122,6 +122,13 @@ $ms13                               : 100 !default;
 $alpha-font-family                  : sans-serif !default;
 $beta-font-family                   : serif !default;
 
+$pathway-font-family:       'Pathway Gothic One', sans-serif;
+$oswald-font-family:        'Oswald', sans-serif;
+$cuprum-font-family:        'Cuprum', sans-serif;
+$fjalla-font-family:        'Fjalla One', sans-serif;
+
+$philosopher-font-family:   'Philosopher', sans-serif;
+
 $alpha-font-size                    : $ms0 !default;
 
 $alpha-font-weight                  : 400 !default;
@@ -231,7 +238,7 @@ $body-selection-text-shadow         : none !default;
 
 $h1-font-family                     : $alpha-font-family !default;
 $h1-font-weight                     : $alpha-font-weight !default;
-$h1-font-size                       : $ms6 !default;
+$h1-font-size                       : $ms7 !default;
 $h1-line-height                     : 2 !default;
 $h1-margin-bottom                   : $alpha-leading !default;
 
