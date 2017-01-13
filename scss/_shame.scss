@@ -3,7 +3,9 @@
     ---
     Hacks and quick fixes
 */
-
+.u-x-small {
+    @include text-dimensions($ms-2);
+}
 
     .c-main {
         color: rgb(220, 220, 220);
