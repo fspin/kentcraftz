@@ -40,11 +40,6 @@
             justify-content: center;
             align-items: center;
 
-            background:
-                linear-gradient( 135deg, rgba(0, 0, 0, 0), 75%, rgba(0, 0, 0, .75) ),
-                linear-gradient( -45deg, rgba(0, 0, 0, 0), 75%, rgba(0, 0, 0, .75) ),
-                url('../img/jpg/bg.jpg');
-
             background-repeat: no-repeat;
             background-position: 50%;
             background-color: #000;
@@ -64,6 +59,60 @@
                 background-position: 50%;
 
             }
+        }
+
+        .c-section--works-finishing {
+            background-size: 100% !important;
+            background-repeat: no-repeat;
+            background:
+                linear-gradient( 135deg, rgba(0, 0, 0, 0), 75%, rgba(0, 0, 0, .75) ),
+                linear-gradient( -45deg, rgba(0, 0, 0, 0), 75%, rgba(0, 0, 0, .75) ),
+                url('../img/jpg/bg-works-finishing.jpg');
+        }
+
+        .c-section--works-portfolio {
+            background-size: 100% !important;
+            background-repeat: no-repeat;
+            background:
+                linear-gradient( 135deg, rgba(0, 0, 0, 0), 75%, rgba(0, 0, 0, .75) ),
+                linear-gradient( -45deg, rgba(0, 0, 0, 0), 75%, rgba(0, 0, 0, .75) ),
+                url('../img/jpg/bg-works-portfolio.jpg');
+        }
+
+        .c-section--works-restoration {
+            background-size: 100% !important;
+            background-repeat: no-repeat;
+            background:
+                linear-gradient( 135deg, rgba(0, 0, 0, 0), 75%, rgba(0, 0, 0, .75) ),
+                linear-gradient( -45deg, rgba(0, 0, 0, 0), 75%, rgba(0, 0, 0, .75) ),
+                url('../img/jpg/bg-works-restoration.jpg');
+        }
+
+        .c-section--workshop-chisels {
+            background-size: 100% !important;
+            background-repeat: no-repeat;
+            background:
+                linear-gradient( 135deg, rgba(0, 0, 0, 0), 75%, rgba(0, 0, 0, .75) ),
+                linear-gradient( -45deg, rgba(0, 0, 0, 0), 75%, rgba(0, 0, 0, .75) ),
+                url('../img/jpg/bg-workshop-chisels.jpg');
+        }
+
+        .c-section--workshop-planes {
+            background-size: 100% !important;
+            background-repeat: no-repeat;
+            background:
+                linear-gradient( 135deg, rgba(0, 0, 0, 0), 75%, rgba(0, 0, 0, .75) ),
+                linear-gradient( -45deg, rgba(0, 0, 0, 0), 75%, rgba(0, 0, 0, .75) ),
+                url('../img/jpg/bg-workshop-planes.jpg');
+        }
+
+        .c-section--workshop-saw-knives {
+            background-size: 100% !important;
+            background-repeat: no-repeat;
+            background:
+                linear-gradient( 135deg, rgba(0, 0, 0, 0), 75%, rgba(0, 0, 0, .75) ),
+                linear-gradient( -45deg, rgba(0, 0, 0, 0), 75%, rgba(0, 0, 0, .75) ),
+                url('../img/jpg/bg-workshop-saw-knives.jpg');
         }
     }
 
