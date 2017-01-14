@@ -10,6 +10,11 @@
     @include padding-lr($columns-gutter,$columns-gutter);
 }
 
+.c-row--md {
+    @include padding-tb(2,2);
+    @include padding-lr(2,2);
+}
+
 .c-row--alpha {
     background-color: palette(color-neutral,x-light);
 }

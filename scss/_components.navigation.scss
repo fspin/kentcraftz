@@ -31,6 +31,9 @@
     }
 
     .c-nav-main__item {
+
+        text-transform: uppercase;
+        letter-spacing: .0125rem;
         & + & {
             border-top: 1px dotted palette(color-neutral,light);
         }
@@ -50,14 +53,14 @@
         color: palette(color-neutral, x-dark);
         text-decoration: none;
         font-weight: $beta-font-weight;
-        @include text-dimensions($alpha-font-size,1,0,.25,.25);
+        @include text-dimensions($ms1,1,0,.25,.25);
 
         @include mq(bp3) {
             @include padding-tb(1.25,1.25);
         }
 
         .is-selected & {
-            color: palette(color-neutral,light);
+            color: palette(color-gamma);
         }
 
         &:hover {
@@ -69,14 +72,29 @@
 .c-nav-main-trigger {
     user-select: none;
     position: absolute;
-    top: 2em;
+    // top: 2em;
     right: 1em;
     display: block;
+
     color: palette(color-alpha);
     background-color: palette(color-neutral,x-light);
     border: 1px solid palette(color-alpha);
     outline: 0;
-    border-radius: $radius;
+    // border-radius: $radius;
+
+    line-height: 1.5rem;
+    font-size: 1rem;
+    font-family: $alpha-font-family;
+    text-transform: uppercase;
+    font-size: 1rem;
+
+    margin: .70rem 0;
+    padding: .5rem;
+
+    svg {
+        vertical-align: baseline;
+        margin-bottom: -1px;
+    }
 
     &.is-active {
         color: palette(color-neutral,x-light);

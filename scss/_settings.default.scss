@@ -76,6 +76,24 @@ $palettes: (
         dark                        : hsl(hue($color-beta),100,25),
         x-dark                      : hsl(hue($color-beta),100,15)
     ),
+    color-gamma: (
+        light                       : hsl(hue($color-gamma),70,60),
+        base                        : $color-gamma,
+        dark                        : hsl(hue($color-gamma),100,25),
+        x-dark                      : hsl(hue($color-gamma),100,15)
+    ),
+    color-delta: (
+        light                       : hsl(hue($color-delta),70,60),
+        base                        : $color-delta,
+        dark                        : hsl(hue($color-delta),100,25),
+        x-dark                      : hsl(hue($color-delta),100,15)
+    ),
+    color-epsilon: (
+        light                       : hsl(hue($color-epsilon),70,60),
+        base                        : $color-epsilon,
+        dark                        : hsl(hue($color-epsilon),100,25),
+        x-dark                      : hsl(hue($color-epsilon),100,15)
+    ),
     color-error: (
         light                       : hsl(hue($color-error),70,60),
         base                        : $color-error,
@@ -123,13 +141,13 @@ $ms13                               : 100 !default;
 // Font settings
 // ---
 
-$alpha-font-family                  : sans-serif !default;
-$beta-font-family                   : serif !default;
+$alpha-font-family                  : 'Fjalla One', sans-serif !default;
+$beta-font-family                   : 'Noto Serif', serif !default;
 
 $pathway-font-family:       'Pathway Gothic One', sans-serif;
 $oswald-font-family:        'Oswald', sans-serif;
 $cuprum-font-family:        'Cuprum', sans-serif;
-$fjalla-font-family:        'Fjalla One', sans-serif;
+// $fjalla-font-family:        'Fjalla One', sans-serif;
 
 $philosopher-font-family:   'Philosopher', sans-serif;
 
@@ -219,7 +237,7 @@ $animation-easing-beta              : cubic-bezier(.68, -.55, .265, 1.55) !defau
 // Page
 // ---
 
-$html-font-family                   : $alpha-font-family !default;
+$html-font-family                   : $beta-font-family !default;
 $html-font-weight                   : $alpha-font-weight !default;
 $html-font-size                     : $alpha-font-size !default;
 $html-line-height                   : $alpha-line-height !default;
