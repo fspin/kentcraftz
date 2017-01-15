@@ -3,7 +3,9 @@
     ---
     Site navigation, breadcrumbs, etc.
 */
-
+.c-nav--top {
+    position: relative;
+}
 .c-nav-main {
     width: 100%;
     float: left;
@@ -22,7 +24,13 @@
 }
 
     .c-nav-main__list {
-        border-top: 1px dotted palette(color-neutral,light);
+        // border-top: 1px dotted palette(color-neutral,light);
+        // border-bottom: 1px dotted palette(color-neutral,light);
+        @include margin-bottom(1);
+
+        @include mq(bp2) {
+            @include margin-bottom(0);
+        }
 
         @include mq(bp3) {
             border-top: 0;
@@ -34,11 +42,14 @@
 
         text-transform: uppercase;
         letter-spacing: .0125rem;
+        @include padding-tb(.5,.5);
+
         & + & {
             border-top: 1px dotted palette(color-neutral,light);
         }
 
         @include mq(bp3) {
+            @include padding-tb(0,0);
             float: left;
 
             & + & {
@@ -70,10 +81,17 @@
     }
 
 .c-nav-main-trigger {
+    position: relative;
+    width: 100%;
+    right: 0;
+
+    @include mq(bp2) {
+        position: absolute;
+        // right: 1em;
+        width: auto;
+    }
+
     user-select: none;
-    position: absolute;
-    // top: 2em;
-    right: 1em;
     display: block;
 
     color: palette(color-alpha);

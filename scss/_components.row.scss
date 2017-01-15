@@ -11,8 +11,12 @@
 }
 
 .c-row--md {
-    @include padding-tb(2,2);
     @include padding-lr(2,2);
+    @include padding-tb(.5,1);
+
+    @include mq(bp3) {
+        @include padding-tb(2,2);
+    };
 }
 
 .c-row--alpha {

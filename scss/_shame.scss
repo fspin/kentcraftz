@@ -7,16 +7,24 @@
     @include text-dimensions($ms-2,1);
 }
 
+
 .c-stage {
     display: flex;
     align-items: center;
+    min-height: calc(100vh - 11.5rem);
 
-    min-height: calc(100vh - 10.5rem);
     max-width: 1200px;
     margin: 0 auto;
 
     border-left: 20px solid rgba(255,255,255,1);
     border-right: 20px solid rgba(255,255,255,1);
+
+    @include mq(bp2) {
+        min-height: calc(100vh - 8rem);
+    }
+    @include mq(bp3) {
+        min-height: calc(100vh - 10.5rem);
+    }
 }
 
     .c-stage--tiles {
@@ -150,16 +158,21 @@
         .c-tile__title {
             font-family: $alpha-font-family;
             text-transform: uppercase;
-            letter-spacing: .0125rem;
+            // letter-spacing: .0125rem;
 
             width: 100%;
             height: auto;
-            // border: 1px solid red;
-            @include padding-bottom(1);
-            @include padding-top(1);
-            @include padding-left(2);
-            margin-bottom: 0;
-            @include text-dimensions($ms4,2,0,0);
+            @include padding-tb(1,1);
+            @include padding-lr(1.5,1.5);
+            @include margin-bottom(0);
+            @include text-dimensions($ms2);
+
+            @include mq(bp2) {
+                @include text-dimensions($ms3);
+            }
+            @include mq(bp3) {
+                @include text-dimensions($ms4);
+            }
         }
 
     .c-stage--home {
